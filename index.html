@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>content-library-app-sample</title>
+  
+<!--
+Optional: This is included in the sample to demonstrate that your CSS can be included here.
+-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script>
+    window.sections = [0, 1, 2, 3, 4];
+  </script>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+</head>
+
+<body>
+<div id="content-library"></div>
+
+<script src="https://rickyharor.github.io/content-library-app-sample/index.js"></script>
+  
+<!--
+Optional: This is included in the sample to demonstrate that your JavaScript can be included here.
+-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--
+Optional: This script is included in the sample to detext script blocking extensions.
+-->
+<script>  
+  window.onload = function() {
+    var element = document.getElementById('content-library');
+    if (element.innerHTML === '' || element.innerHTML === '<app-root></app-root>') {
+       document.getElementById('content-library').innerHTML = '<p>The content for this page failed to load. This may be due to an extension you have installed in your browser.</p><p>If you continue to experience issues after testing in other browsers please report this issue to <a href="mailto:ccecrsdv@mcmaster.ca">ccecrsdv@mcmaster.ca</a>.</p>';
+     }
+  };
+</script>
+</body>
+</html>
